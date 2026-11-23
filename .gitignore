@@ -1,0 +1,7 @@
+/dados/
+/node.exe
+/node_modules/
+*.sqlite
+*.sqlite-*
+.env
+*.log

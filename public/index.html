@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111110">
+  <title>Sessão 7 — Programação e reservas</title>
+  <link rel="stylesheet" href="/estilo.css">
+  <script src="/interface.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="limite barra">
+      <button class="marca" type="button" data-tela="agenda" aria-label="Sessão 7, início">
+        <span class="marca-icone" aria-hidden="true">7</span><span>Sessão<span class="marca-numero">7</span></span>
+      </button>
+      <nav aria-label="Navegação principal">
+        <button class="nav-item" type="button" data-tela="agenda" aria-current="page">Em cartaz</button>
+        <button class="nav-item" type="button" data-tela="painel">Área do organizador</button>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo" class="limite" tabindex="-1"><p class="estado-vazio">Carregando a programação…</p></main>
+  <footer class="limite rodape">
+    <span>Sessão 7 · Cineclube em demonstração</span>
+    <a href="/creditos" target="_blank" rel="noopener">Créditos das imagens</a>
+  </footer>
+  <dialog id="janela" aria-labelledby="titulo-janela"></dialog>
+  <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
