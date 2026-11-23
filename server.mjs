@@ -75,7 +75,7 @@ servidor.on('error', erro => {
   console.error(erro.code === 'EADDRINUSE' ? 'A porta já está em uso. Feche a outra janela do Sessão 7 ou altere PORT.' : erro.message);
   process.exitCode = 1;
 });
-servidor.listen(porta, '127.0.0.1', () => {
+servidor.listen(porta, '0.0.0.0', () => {
   const endereco = `http://127.0.0.1:${servidor.address().port}`;
   console.log(`Sessão 7 disponível em ${endereco}`);
   if (process.platform === 'win32' && process.argv.includes('--abrir')) {
